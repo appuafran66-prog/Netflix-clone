@@ -49,3 +49,21 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+.hero-btns .btn.dark-btn{
+    color: white;
+    background: rgba(109, 109, 109, 0.7);
+}
+
+.hero-btns .btn:hover{
+    background: #ffffffbf;
+
+}
+
+.hero-btns .btn.dark-btn:hover{
+    background: rgba(109, 109, 109, 0.9);
+}
+
+.more-cards{
+    padding-left: 6%;
+}
