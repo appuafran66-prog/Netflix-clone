@@ -35,3 +35,65 @@
     color: white;
 
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .title-cards {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .title-cards h2 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .card-list img {
+    width: 180px;
+    height: auto;
+  }
+
+  .card-list {
+    gap: 8px;
+  }
+
+  .card-list .card p {
+    bottom: 8px;
+    right: 8px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .title-cards {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .title-cards h2 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .card-list img {
+    width: 120px;
+    height: auto;
+  }
+
+  .card-list {
+    gap: 6px;
+  }
+
+  .card-list .card p {
+    bottom: 6px;
+    right: 6px;
+    font-size: 10px;
+  }
+}

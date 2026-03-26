@@ -86,3 +86,123 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .login {
+    padding: 15px 4%;
+  }
+
+  .login-logo {
+    width: 120px;
+  }
+
+  .login-form {
+    padding: 40px;
+    max-width: 100%;
+  }
+
+  .login-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .login-form input {
+    height: 45px;
+    margin: 10px 0;
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  .login-form input::placeholder {
+    font-size: 14px;
+  }
+
+  .login-form .btn {
+    margin-top: 16px;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .form-help {
+    font-size: 12px;
+  }
+
+  .remember input {
+    width: 16px;
+    height: 16px;
+  }
+
+  .form-switch {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .login {
+    padding: 12px 3%;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .login-logo {
+    width: 100px;
+  }
+
+  .login-form {
+    padding: 24px;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .login-form h1 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .login-form input {
+    height: 40px;
+    margin: 8px 0;
+    padding: 12px 12px;
+    font-size: 13px;
+  }
+
+  .login-form input::placeholder {
+    font-size: 13px;
+  }
+
+  .login-form .btn {
+    margin-top: 16px;
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .form-help {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 11px;
+    justify-content: space-between;
+  }
+
+  .remember {
+    gap: 8px;
+  }
+
+  .remember input {
+    width: 14px;
+    height: 14px;
+  }
+
+  .form-switch {
+    margin-top: 20px;
+    font-size: 11px;
+  }
+
+  .form-switch span {
+    margin-left: 4px;
+  }
+}

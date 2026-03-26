@@ -1,0 +1,412 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/background_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  padding: 20px;
+}
+
+.auth-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: none;
+  z-index: 1;
+}
+
+.auth-card {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 68px 68px 68px 68px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 450px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.netflix-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 28px;
+  display: none;
+}
+
+.auth-card h1 {
+  display: none;
+}
+
+.auth-card h2 {
+  margin: 0 0 28px 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: none;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background: rgba(51, 51, 51, 0.7);
+  color: white;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  margin-bottom: 0;
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.form-group input:focus {
+  outline: none;
+  background: rgba(79, 79, 79, 0.7);
+}
+
+.form-group input:disabled {
+  background: rgba(85, 85, 85, 0.7);
+  cursor: not-allowed;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background: #e50914;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 24px;
+  letter-spacing: 0.5px;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #c40812;
+}
+
+.submit-btn:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.toggle-text {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 13px;
+  color: #999;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: normal;
+  margin-left: 4px;
+  text-decoration: none;
+}
+
+.toggle-btn:hover {
+  color: #b3b3b3;
+}
+
+.message {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  text-align: center;
+  animation: slideDown 0.3s ease;
+}
+
+.message.success {
+  background: #28a745;
+  color: white;
+  border-left: 3px solid #20c997;
+}
+
+.message.error {
+  background: #c40812;
+  color: white;
+  border-left: 3px solid #a00610;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.user-info {
+  background: rgba(51, 51, 51, 0.5);
+  padding: 24px;
+  border-radius: 4px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.user-info p:first-child {
+  margin: 0 0 12px 0;
+  color: #999;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.user-email {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  word-break: break-all;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background: #e50914;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  letter-spacing: 0.5px;
+}
+
+.logout-btn:hover:not(:disabled) {
+  background: #c40812;
+}
+
+.logout-btn:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+/* Additional Netflix UI Styles */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0 24px 0;
+  font-size: 13px;
+}
+
+.form-options label {
+  display: flex;
+  align-items: center;
+  color: #999;
+  margin: 0;
+  cursor: pointer;
+}
+
+.form-options input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.form-options a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.form-options a:hover {
+  color: #ccc;
+}
+
+.toggle-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.toggle-section p {
+  margin: 0;
+  font-size: 13px;
+  color: #999;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 20px;
+  }
+
+  .auth-card {
+    padding: 48px 40px;
+    max-width: 100%;
+  }
+
+  .auth-card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-group input {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 14px 16px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .toggle-section {
+    margin-top: 12px;
+    padding-top: 12px;
+    gap: 10px;
+  }
+
+  .toggle-section p {
+    font-size: 12px;
+  }
+
+  .toggle-btn {
+    font-size: 12px;
+  }
+
+  .message {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .form-options {
+    margin: 12px 0 20px 0;
+    font-size: 12px;
+  }
+
+  .form-options input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 15px;
+    min-height: auto;
+  }
+
+  .auth-card {
+    padding: 32px 24px;
+    max-width: 100%;
+  }
+
+  .auth-card h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .form-group input {
+    padding: 12px 12px;
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    padding: 12px 16px;
+    font-size: 13px;
+    margin-top: 16px;
+  }
+
+  .logout-btn {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+
+  .toggle-section {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .toggle-section p {
+    font-size: 11px;
+  }
+
+  .toggle-btn {
+    font-size: 11px;
+  }
+
+  .message {
+    font-size: 11px;
+    padding: 10px;
+    margin-top: 16px;
+  }
+
+  .user-info {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .user-email {
+    font-size: 16px;
+  }
+
+  .form-options {
+    flex-direction: column;
+    margin: 10px 0 16px 0;
+    font-size: 11px;
+  }
+
+  .form-options label,
+  .form-options a {
+    font-size: 11px;
+  }
+
+  .form-options input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+  }
+}

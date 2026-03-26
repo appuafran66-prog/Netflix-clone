@@ -34,21 +34,18 @@ useEffect(() => {
   .catch(err => console.error(err));
 
   cardsRef.current.addEventListener("wheel", handleWheel);
-},[])
+}, [category])
 
   return (
     <div className='title-cards'>
       <h2>{title?title:'Popular on Netflix'}</h2>
       <div className="card-list" ref={cardsRef}>
-        {apiData.map((card, index) => {
-          return (<Link className="card" key={index} to={`/player/${card.id}`}>
+        {apiData.map((card, index) => (
+          <Link className="card" key={index} to={`/player/${card.id}`}>
             <img src={`https://image.tmdb.org/t/p/w500` + card.backdrop_path} alt="" className='card-img' />
             <p className='card-name'>{card.original_title}</p>
-          </Link>)
-        }
-          
-        
-        )}
+          </Link>
+        ))}
       </div>
     </div>
   )

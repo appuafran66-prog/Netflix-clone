@@ -77,3 +77,100 @@
     display: block;
 }
 
+.nav-dark{
+    background-color: #141414;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 4%;
+    font-size: 12px;
+  }
+
+  .navbar-left {
+    gap: 30px;
+  }
+
+  .navbar-left img {
+    width: 70px;
+  }
+
+  .navbar-left ul {
+    gap: 15px;
+  }
+
+  .navbar-left ul li {
+    font-size: 12px;
+  }
+
+  .navbar-right {
+    gap: 15px;
+  }
+
+  .navbar-right .icons {
+    width: 16px;
+  }
+
+  .navbar-right .profile {
+    width: 30px;
+  }
+
+  .navbar .dropdown {
+    padding: 12px 16px;
+  }
+
+  .navbar .dropdown p {
+    font-size: 12px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 3%;
+    font-size: 11px;
+  }
+
+  .navbar-left {
+    gap: 15px;
+  }
+
+  .navbar-left img {
+    width: 50px;
+  }
+
+  .navbar-left ul {
+    display: none;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .navbar-right p {
+    display: none;
+  }
+
+  .navbar-right .icons {
+    width: 14px;
+  }
+
+  .navbar-right .profile {
+    width: 25px;
+  }
+
+  .navbar-profile {
+    gap: 6px;
+  }
+
+  .navbar .dropdown {
+    padding: 10px 12px;
+  }
+
+  .navbar .dropdown p {
+    font-size: 11px;
+  }
+}

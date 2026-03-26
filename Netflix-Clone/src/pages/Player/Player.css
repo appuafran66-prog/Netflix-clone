@@ -24,3 +24,56 @@
     justify-content: space-between;
     width: 90%;
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .player {
+    height: 100vh;
+  }
+
+  .player img {
+    top: 15px;
+    left: 15px;
+    width: 40px;
+  }
+
+  .player iframe {
+    width: 90vw;
+    height: 50vh;
+    border-radius: 8px;
+  }
+
+  .player-info {
+    width: 90%;
+    font-size: 13px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .player {
+    height: 100vh;
+    padding: 10px;
+  }
+
+  .player img {
+    top: 10px;
+    left: 10px;
+    width: 30px;
+  }
+
+  .player iframe {
+    width: 95vw;
+    height: 40vh;
+    border-radius: 6px;
+  }
+
+  .player-info {
+    width: 95%;
+    font-size: 11px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
